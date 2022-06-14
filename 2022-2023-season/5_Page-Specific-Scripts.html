@@ -62,7 +62,7 @@
             });
         }
 
-        var contents = $(document.createElement('div'));
+        var contents = $(document.createElement('span'));
 
         var children = this.children().detach();
         contents.append(children);
@@ -119,6 +119,8 @@
 
         contents.css({
             position: 'static',
+            'width': '100%',
+            'max-width': '600px',
             left: marginLeft,
             top: marginTop,
             right: marginRight,
