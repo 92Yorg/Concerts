@@ -44,9 +44,108 @@
     color: #000;
     background-color: #edabba;
 }
+.o-grid--styled .o-grid__item--alt .navigation-item, .o-grid--styled .o-grid__item--alt .navigation-item__content {
+    color: #fff;
+    background-color: #000;
+}
 .o-grid--styled .navigation-item__content:hover {
     color: #fff;
     background-color: #990d61;
+}
+.navigation-grid .o-grid--4up .navigation-item__title {
+    font-size: 1.25rem;
+}
+#music-subs .flex-grid__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 10px;
+    background-color: #000;
+}
+#music-subs .program-card {
+    background-color: #000;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#music-subs .program-card__header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px 15px;
+}
+#music-subs .program-card__header h3 {
+    margin: 0;
+}
+#music-subs .program-card__header .highlight {
+    color: #ecabbb;
+}
+#music-subs .program-card__media {
+    padding: 0;
+}
+#music-subs .program-card__body {
+    background-color: #fff;
+}
+#music-subs .program-card:hover .program-card__body {
+    background-color: #000;
+}
+#music-subs .program-card__actions .btn {
+    background-color: #edabba;
+}
+#music-subs .program-card__actions .btn:hover {
+    background-color: #990d61;
+}
+
+@media (max-width: 49.99em) {
+    #music-subs .program-card:not(.program-card--featured) .program-card__media {
+        width: auto;
+        padding: 0;
+    }
+    #music-subs .program-card:not(.program-card--featured) .program-card__body {
+        width: 100%;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 10px 15px 15px;
+    }
+    #music-subs .program-card .program-card__details p {
+        font-size: .875rem;
+    }
+}
+
+
+@media (min-width: 30em) {
+    .flex-grid {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 -10px;
+    }
+    .flex-grid__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
 }
 
 @media (max-width: 30em) {
@@ -57,10 +156,16 @@
 
 @media (min-width: 50em) {
     .ms-hero__description {
-        font-size: 18px;
+        font-size: 24px;
     }
     .o-grid--3up .navigation-item__content {
         padding: 20px 20px;
     }
+    .area-flex-grid:nth-of-type(odd) ul:not(.flex-grid--natural) .flex-grid__item {
+        -webkit-box-ordinal-group: unset4;
+        -ms-flex-order: unset;
+        order: unset;
+    }
 }
+
 </style>
