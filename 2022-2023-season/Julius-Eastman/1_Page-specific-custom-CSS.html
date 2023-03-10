@@ -4,17 +4,92 @@
 
 	}
 
-	
+	.hero-panel__prefix {
+		text-transform: uppercase;
+		color:  var(--92nyblue);
+		font-weight: 400;
+	}
 
-	h1.hero-panel__title
-	cite {
-		color: var(--92nyblue);
+	.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+    	font-size: 21vw;
+	}
 
+	.hero-panel__subtitle {
+		font-weight: 900;
+		font-size: 7vw;
+	}
+
+	.hero-panel__subtitle strong {
+		text-transform: uppercase;
+		color:  var(--92nyblue);
+	}
+
+	.hero-panel__suffix {
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+
+	.hero-panel__date {
+		font-weight: bold;
+		color:  var(--92nyblue);
+	}
+
+	.hero-panel__prefix,
+	.hero-panel__suffix,
+	.hero-panel__date {
+		font-size: 4.5vw;
+	}
+
+	@media (min-width: 35em) {
+		.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+			font-size: 12.5vw;
+		}
+		.hero-panel__subtitle {
+			font-size: 3vw;
+		}
+		.hero-panel__prefix,
+		.hero-panel__suffix,
+		.hero-panel__date {
+			font-size: 2.25vw;
+		}
+	}
+
+	@media (min-width: 50em) {
+		.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+			font-size: 12.5vw;
+		}
+		.hero-panel__subtitle {
+			font-size: 3vw;
+		}
+		.hero-panel__prefix,
+		.hero-panel__suffix,
+		.hero-panel__date {
+			font-size: 2.25vw;
+		}
+	}
+
+	@media (min-width: 81.25em) {
+		.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+			font-size: 10.25rem;
+		}
+		.hero-panel__subtitle {
+			font-size: 2.5rem;
+		}
+		.hero-panel__prefix,
+		.hero-panel__suffix,
+		.hero-panel__date {
+			font-size: 1.75rem;
+		}
 	}
 
     .u-tone-background-custom {
         background-color: var(--92nyblue);
     }
+
+	.pull-quote__text {
+		font-size: 1rem;
+		line-height: 1.2;
+	}
 
 	@media (min-width: 50em) {
 		.pull-quote__text {
