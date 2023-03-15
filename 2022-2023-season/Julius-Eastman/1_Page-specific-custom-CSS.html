@@ -1,53 +1,62 @@
-<style type="text/css">:root {
+<style type="text/css">
+	:root {
 		--92nypink: #ecabbb;
 		--92nyblue: #8eaae2;
-
 	}
 
 	.hero-panel__prefix {
-		text-transform: uppercase;
-		color:  var(--92nyblue);
 		font-weight: 400;
 	}
 
-	.fonts-loaded h1.hero-panel__title, .hero-panel__title {
-    	font-size: 21vw;
+	.fonts-loaded h1.hero-panel__title,
+	.hero-panel__title {
+		font-size: 21vw;
+		color: var(--92nyblue);
 	}
 
 	.hero-panel__subtitle {
-		font-weight: 900;
-		font-size: 7vw;
+		font-size: 4.75vw;
 	}
 
 	.hero-panel__subtitle strong {
 		text-transform: uppercase;
-		color:  var(--92nyblue);
+		color: var(--92nyblue);
 	}
 
 	.hero-panel__suffix {
 		text-transform: uppercase;
-		font-weight: 900;
+		font-weight: 700;
+        line-height: 1;
 	}
 
 	.hero-panel__date {
 		font-weight: bold;
-		color:  var(--92nyblue);
+		color: var(--92nyblue);
 	}
 
-	.hero-panel__prefix,
+	.hero-panel__prefix {
+		font-size: 6.5vw;
+        line-height: 1;
+	}
+
 	.hero-panel__suffix,
 	.hero-panel__date {
 		font-size: 4.5vw;
 	}
 
 	@media (min-width: 35em) {
-		.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+		.fonts-loaded h1.hero-panel__title,
+		.hero-panel__title {
 			font-size: 12.5vw;
 		}
 		.hero-panel__subtitle {
-			font-size: 3vw;
+			font-size: 2.375vw;
 		}
-		.hero-panel__prefix,
+
+		.hero-panel__prefix {
+			font-size: 3.25vw;
+		}
+
 		.hero-panel__suffix,
 		.hero-panel__date {
 			font-size: 2.25vw;
@@ -55,13 +64,17 @@
 	}
 
 	@media (min-width: 50em) {
-		.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+		.fonts-loaded h1.hero-panel__title,
+		.hero-panel__title {
 			font-size: 12.5vw;
 		}
 		.hero-panel__subtitle {
-			font-size: 3vw;
+			font-size: 2vw;
 		}
-		.hero-panel__prefix,
+		.hero-panel__prefix {
+			font-size: 3.25vw;
+		}
+
 		.hero-panel__suffix,
 		.hero-panel__date {
 			font-size: 2.25vw;
@@ -69,22 +82,27 @@
 	}
 
 	@media (min-width: 81.25em) {
-		.fonts-loaded h1.hero-panel__title, .hero-panel__title {
+		.fonts-loaded h1.hero-panel__title,
+		.hero-panel__title {
 			font-size: 10.25rem;
 		}
 		.hero-panel__subtitle {
-			font-size: 2.5rem;
+			font-size: 1.75rem;
 		}
-		.hero-panel__prefix,
+
+		.hero-panel__prefix {
+			font-size: 2.75rem;
+		}
+
 		.hero-panel__suffix,
 		.hero-panel__date {
 			font-size: 1.75rem;
 		}
 	}
 
-    .u-tone-background-custom {
-        background-color: var(--92nyblue);
-    }
+	.u-tone-background-custom {
+		background-color: var(--92nyblue);
+	}
 
 	.pull-quote__text {
 		font-size: 1rem;
@@ -96,5 +114,4 @@
 			width: 75%;
 		}
 	}
-	
 </style>
