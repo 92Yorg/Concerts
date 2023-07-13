@@ -93,14 +93,20 @@
 #music-subs .program-card__body {
     background-color: #fff;
 }
-#music-subs .program-card:hover .program-card__body {
-    background-color: #000;
-}
 #music-subs .program-card__actions .btn {
     background-color: #edabba;
 }
+.program-card__actions .btn {
+    color: #000;
+}
 #music-subs .program-card__actions .btn:hover {
     background-color: #990d61;
+    color: #fff;
+}
+@media (max-width: 29.99em) {
+    .program-card:not(.program-card--featured) .btn {
+        font-size: .75rem;
+    }
 }
 
 @media (max-width: 49.99em) {
@@ -161,6 +167,9 @@
 @media (min-width: 50em) {
     .ms-hero__description {
         font-size: 24px;
+    }
+    #music-subs .program-card:hover .program-card__body {
+        background-color: #000;
     }
     .o-grid--3up .navigation-item__content {
         padding: 20px 20px;
